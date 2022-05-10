@@ -1,8 +1,7 @@
 library actions;
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../model/index.dart';
-
+import 'package:redux_movie_app/models/index.dart';
 
 part 'auth/set.dart';
 part 'app/initial_app.dart';
