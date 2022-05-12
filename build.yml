@@ -1,0 +1,17 @@
+targets:
+  $default:
+    builders:
+      json_serializable|json_serializable:
+        options:
+          explicit_to_json: true
+        generate_for:
+          - "**/data/**.dart"
+          - "**/services/**.dart"
+          - "**/models/**.dart"
+      freezed|freezed:
+        generate_for:
+          - "**/actions/**.dart"
+          - "**/containers/**.dart"
+          - "**/services/**.dart"
+          - "**/data/**.dart"
+          - "**/models/**.dart"
