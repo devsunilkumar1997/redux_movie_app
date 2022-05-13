@@ -5,13 +5,20 @@ targets:
         options:
           explicit_to_json: true
         generate_for:
+          - "**/actions/**.dart"
           - "**/data/**.dart"
           - "**/services/**.dart"
           - "**/models/**.dart"
+          
+         
       freezed|freezed:
         generate_for:
           - "**/actions/**.dart"
           - "**/containers/**.dart"
-          - "**/services/**.dart"
+          - "**/movies/**.dart"
+         
           - "**/data/**.dart"
+          - "**/services/**.dart"
           - "**/models/**.dart"
+          
+          

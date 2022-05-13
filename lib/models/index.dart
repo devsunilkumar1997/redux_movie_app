@@ -9,3 +9,4 @@ part 'index.freezed.dart';
 part 'auth/auth_user.dart';
 part 'index.g.dart';
 part 'container/container.dart';
+part 'trending/trending_movie.dart';

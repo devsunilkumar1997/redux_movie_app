@@ -80,3 +80,53 @@ Map<String, dynamic> _$$BlContainer$ToJson(_$BlContainer$ instance) =>
       'created_at': instance.createdAt.toIso8601String(),
       'updated_at': instance.updatedAt.toIso8601String(),
     };
+
+_$TrendingMovieInfo$ _$$TrendingMovieInfo$FromJson(Map<String, dynamic> json) =>
+    _$TrendingMovieInfo$(
+      title: json['title'] as String?,
+      adult: json['adult'] as bool?,
+      backdroppath: json['backdroppath'] as String?,
+      id: json['id'] as int?,
+      originalLanguage: json['originalLanguage'] as String?,
+      originalTitle: json['originalTitle'] as String?,
+      posterPath: json['posterPath'] as String?,
+      video: json['video'] as bool?,
+      voteAverage: (json['voteAverage'] as num?)?.toDouble(),
+      voteCount: json['voteCount'] as int?,
+      overview: json['overview'] as String?,
+      releaseDate: json['releaseDate'] as String?,
+      genreIds:
+          (json['genreIds'] as List<dynamic>?)?.map((e) => e as int).toList(),
+      popularity: (json['popularity'] as num?)?.toDouble(),
+      mediaType: json['mediaType'] as String?,
+      firstAirDate: json['firstAirDate'] as String?,
+      originalName: json['originalName'] as String?,
+      originCountry: (json['originCountry'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
+      name: json['name'] as String?,
+    );
+
+Map<String, dynamic> _$$TrendingMovieInfo$ToJson(
+        _$TrendingMovieInfo$ instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'adult': instance.adult,
+      'backdroppath': instance.backdroppath,
+      'id': instance.id,
+      'originalLanguage': instance.originalLanguage,
+      'originalTitle': instance.originalTitle,
+      'posterPath': instance.posterPath,
+      'video': instance.video,
+      'voteAverage': instance.voteAverage,
+      'voteCount': instance.voteCount,
+      'overview': instance.overview,
+      'releaseDate': instance.releaseDate,
+      'genreIds': instance.genreIds,
+      'popularity': instance.popularity,
+      'mediaType': instance.mediaType,
+      'firstAirDate': instance.firstAirDate,
+      'originalName': instance.originalName,
+      'originCountry': instance.originCountry,
+      'name': instance.name,
+    };

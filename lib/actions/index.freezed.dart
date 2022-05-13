@@ -15,121 +15,6 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$AddUsers {
-  List<AppUser> get users => throw _privateConstructorUsedError;
-
-  @JsonKey(ignore: true)
-  $AddUsersCopyWith<AddUsers> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AddUsersCopyWith<$Res> {
-  factory $AddUsersCopyWith(AddUsers value, $Res Function(AddUsers) then) =
-      _$AddUsersCopyWithImpl<$Res>;
-  $Res call({List<AppUser> users});
-}
-
-/// @nodoc
-class _$AddUsersCopyWithImpl<$Res> implements $AddUsersCopyWith<$Res> {
-  _$AddUsersCopyWithImpl(this._value, this._then);
-
-  final AddUsers _value;
-  // ignore: unused_field
-  final $Res Function(AddUsers) _then;
-
-  @override
-  $Res call({
-    Object? users = freezed,
-  }) {
-    return _then(_value.copyWith(
-      users: users == freezed
-          ? _value.users
-          : users // ignore: cast_nullable_to_non_nullable
-              as List<AppUser>,
-    ));
-  }
-}
-
-/// @nodoc
-abstract class _$$AddUsers$CopyWith<$Res> implements $AddUsersCopyWith<$Res> {
-  factory _$$AddUsers$CopyWith(
-          _$AddUsers$ value, $Res Function(_$AddUsers$) then) =
-      __$$AddUsers$CopyWithImpl<$Res>;
-  @override
-  $Res call({List<AppUser> users});
-}
-
-/// @nodoc
-class __$$AddUsers$CopyWithImpl<$Res> extends _$AddUsersCopyWithImpl<$Res>
-    implements _$$AddUsers$CopyWith<$Res> {
-  __$$AddUsers$CopyWithImpl(
-      _$AddUsers$ _value, $Res Function(_$AddUsers$) _then)
-      : super(_value, (v) => _then(v as _$AddUsers$));
-
-  @override
-  _$AddUsers$ get _value => super._value as _$AddUsers$;
-
-  @override
-  $Res call({
-    Object? users = freezed,
-  }) {
-    return _then(_$AddUsers$(
-      users == freezed
-          ? _value._users
-          : users // ignore: cast_nullable_to_non_nullable
-              as List<AppUser>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$AddUsers$ implements AddUsers$ {
-  const _$AddUsers$(final List<AppUser> users) : _users = users;
-
-  final List<AppUser> _users;
-  @override
-  List<AppUser> get users {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_users);
-  }
-
-  @override
-  String toString() {
-    return 'AddUsers(users: $users)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AddUsers$ &&
-            const DeepCollectionEquality().equals(other._users, _users));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_users));
-
-  @JsonKey(ignore: true)
-  @override
-  _$$AddUsers$CopyWith<_$AddUsers$> get copyWith =>
-      __$$AddUsers$CopyWithImpl<_$AddUsers$>(this, _$identity);
-}
-
-abstract class AddUsers$ implements AddUsers {
-  const factory AddUsers$(final List<AppUser> users) = _$AddUsers$;
-
-  @override
-  List<AppUser> get users => throw _privateConstructorUsedError;
-  @override
-  @JsonKey(ignore: true)
-  _$$AddUsers$CopyWith<_$AddUsers$> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
 mixin _$InitializeApp {
   String get pendingId => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -1320,5 +1205,635 @@ abstract class CreateContainerError
   @override
   @JsonKey(ignore: true)
   _$$CreateContainerErrorCopyWith<_$CreateContainerError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+mixin _$GetTrendingMovies {
+  String get pendingId => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(ActionResult? onResult, String pendingId) start,
+    required TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)
+        successful,
+    required TResult Function(
+            Object error, StackTrace strackTrace, String pendingId)
+        error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetTrendingMoviesStart value) start,
+    required TResult Function(GetTrendingMoviesSuccessful value) successful,
+    required TResult Function(GetTrendingMoviesError value) error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $GetTrendingMoviesCopyWith<GetTrendingMovies> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $GetTrendingMoviesCopyWith<$Res> {
+  factory $GetTrendingMoviesCopyWith(
+          GetTrendingMovies value, $Res Function(GetTrendingMovies) then) =
+      _$GetTrendingMoviesCopyWithImpl<$Res>;
+  $Res call({String pendingId});
+}
+
+/// @nodoc
+class _$GetTrendingMoviesCopyWithImpl<$Res>
+    implements $GetTrendingMoviesCopyWith<$Res> {
+  _$GetTrendingMoviesCopyWithImpl(this._value, this._then);
+
+  final GetTrendingMovies _value;
+  // ignore: unused_field
+  final $Res Function(GetTrendingMovies) _then;
+
+  @override
+  $Res call({
+    Object? pendingId = freezed,
+  }) {
+    return _then(_value.copyWith(
+      pendingId: pendingId == freezed
+          ? _value.pendingId
+          : pendingId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$$GetTrendingMoviesStartCopyWith<$Res>
+    implements $GetTrendingMoviesCopyWith<$Res> {
+  factory _$$GetTrendingMoviesStartCopyWith(_$GetTrendingMoviesStart value,
+          $Res Function(_$GetTrendingMoviesStart) then) =
+      __$$GetTrendingMoviesStartCopyWithImpl<$Res>;
+  @override
+  $Res call({ActionResult? onResult, String pendingId});
+}
+
+/// @nodoc
+class __$$GetTrendingMoviesStartCopyWithImpl<$Res>
+    extends _$GetTrendingMoviesCopyWithImpl<$Res>
+    implements _$$GetTrendingMoviesStartCopyWith<$Res> {
+  __$$GetTrendingMoviesStartCopyWithImpl(_$GetTrendingMoviesStart _value,
+      $Res Function(_$GetTrendingMoviesStart) _then)
+      : super(_value, (v) => _then(v as _$GetTrendingMoviesStart));
+
+  @override
+  _$GetTrendingMoviesStart get _value =>
+      super._value as _$GetTrendingMoviesStart;
+
+  @override
+  $Res call({
+    Object? onResult = freezed,
+    Object? pendingId = freezed,
+  }) {
+    return _then(_$GetTrendingMoviesStart(
+      onResult: onResult == freezed
+          ? _value.onResult
+          : onResult // ignore: cast_nullable_to_non_nullable
+              as ActionResult?,
+      pendingId: pendingId == freezed
+          ? _value.pendingId
+          : pendingId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GetTrendingMoviesStart implements GetTrendingMoviesStart {
+  const _$GetTrendingMoviesStart(
+      {this.onResult, this.pendingId = _kGetMoviePendingId});
+
+  @override
+  final ActionResult? onResult;
+  @override
+  @JsonKey()
+  final String pendingId;
+
+  @override
+  String toString() {
+    return 'GetTrendingMovies.start(onResult: $onResult, pendingId: $pendingId)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetTrendingMoviesStart &&
+            (identical(other.onResult, onResult) ||
+                other.onResult == onResult) &&
+            const DeepCollectionEquality().equals(other.pendingId, pendingId));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, onResult, const DeepCollectionEquality().hash(pendingId));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$GetTrendingMoviesStartCopyWith<_$GetTrendingMoviesStart> get copyWith =>
+      __$$GetTrendingMoviesStartCopyWithImpl<_$GetTrendingMoviesStart>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(ActionResult? onResult, String pendingId) start,
+    required TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)
+        successful,
+    required TResult Function(
+            Object error, StackTrace strackTrace, String pendingId)
+        error,
+  }) {
+    return start(onResult, pendingId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+  }) {
+    return start?.call(onResult, pendingId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+    required TResult orElse(),
+  }) {
+    if (start != null) {
+      return start(onResult, pendingId);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetTrendingMoviesStart value) start,
+    required TResult Function(GetTrendingMoviesSuccessful value) successful,
+    required TResult Function(GetTrendingMoviesError value) error,
+  }) {
+    return start(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+  }) {
+    return start?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+    required TResult orElse(),
+  }) {
+    if (start != null) {
+      return start(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetTrendingMoviesStart
+    implements GetTrendingMovies, ActionStart {
+  const factory GetTrendingMoviesStart(
+      {final ActionResult? onResult,
+      final String pendingId}) = _$GetTrendingMoviesStart;
+
+  ActionResult? get onResult => throw _privateConstructorUsedError;
+  @override
+  String get pendingId => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$$GetTrendingMoviesStartCopyWith<_$GetTrendingMoviesStart> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$GetTrendingMoviesSuccessfulCopyWith<$Res>
+    implements $GetTrendingMoviesCopyWith<$Res> {
+  factory _$$GetTrendingMoviesSuccessfulCopyWith(
+          _$GetTrendingMoviesSuccessful value,
+          $Res Function(_$GetTrendingMoviesSuccessful) then) =
+      __$$GetTrendingMoviesSuccessfulCopyWithImpl<$Res>;
+  @override
+  $Res call({List<TrendingMovieInfo> trendingmovieinfo, String pendingId});
+}
+
+/// @nodoc
+class __$$GetTrendingMoviesSuccessfulCopyWithImpl<$Res>
+    extends _$GetTrendingMoviesCopyWithImpl<$Res>
+    implements _$$GetTrendingMoviesSuccessfulCopyWith<$Res> {
+  __$$GetTrendingMoviesSuccessfulCopyWithImpl(
+      _$GetTrendingMoviesSuccessful _value,
+      $Res Function(_$GetTrendingMoviesSuccessful) _then)
+      : super(_value, (v) => _then(v as _$GetTrendingMoviesSuccessful));
+
+  @override
+  _$GetTrendingMoviesSuccessful get _value =>
+      super._value as _$GetTrendingMoviesSuccessful;
+
+  @override
+  $Res call({
+    Object? trendingmovieinfo = freezed,
+    Object? pendingId = freezed,
+  }) {
+    return _then(_$GetTrendingMoviesSuccessful(
+      trendingmovieinfo == freezed
+          ? _value._trendingmovieinfo
+          : trendingmovieinfo // ignore: cast_nullable_to_non_nullable
+              as List<TrendingMovieInfo>,
+      pendingId == freezed
+          ? _value.pendingId
+          : pendingId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GetTrendingMoviesSuccessful implements GetTrendingMoviesSuccessful {
+  const _$GetTrendingMoviesSuccessful(
+      final List<TrendingMovieInfo> trendingmovieinfo,
+      [this.pendingId = _kGetMoviePendingId])
+      : _trendingmovieinfo = trendingmovieinfo;
+
+  final List<TrendingMovieInfo> _trendingmovieinfo;
+  @override
+  List<TrendingMovieInfo> get trendingmovieinfo {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_trendingmovieinfo);
+  }
+
+  @override
+  @JsonKey()
+  final String pendingId;
+
+  @override
+  String toString() {
+    return 'GetTrendingMovies.successful(trendingmovieinfo: $trendingmovieinfo, pendingId: $pendingId)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetTrendingMoviesSuccessful &&
+            const DeepCollectionEquality()
+                .equals(other._trendingmovieinfo, _trendingmovieinfo) &&
+            const DeepCollectionEquality().equals(other.pendingId, pendingId));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_trendingmovieinfo),
+      const DeepCollectionEquality().hash(pendingId));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$GetTrendingMoviesSuccessfulCopyWith<_$GetTrendingMoviesSuccessful>
+      get copyWith => __$$GetTrendingMoviesSuccessfulCopyWithImpl<
+          _$GetTrendingMoviesSuccessful>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(ActionResult? onResult, String pendingId) start,
+    required TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)
+        successful,
+    required TResult Function(
+            Object error, StackTrace strackTrace, String pendingId)
+        error,
+  }) {
+    return successful(trendingmovieinfo, pendingId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+  }) {
+    return successful?.call(trendingmovieinfo, pendingId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful(trendingmovieinfo, pendingId);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetTrendingMoviesStart value) start,
+    required TResult Function(GetTrendingMoviesSuccessful value) successful,
+    required TResult Function(GetTrendingMoviesError value) error,
+  }) {
+    return successful(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+  }) {
+    return successful?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+    required TResult orElse(),
+  }) {
+    if (successful != null) {
+      return successful(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetTrendingMoviesSuccessful
+    implements GetTrendingMovies, ActionDone {
+  const factory GetTrendingMoviesSuccessful(
+      final List<TrendingMovieInfo> trendingmovieinfo,
+      [final String pendingId]) = _$GetTrendingMoviesSuccessful;
+
+  List<TrendingMovieInfo> get trendingmovieinfo =>
+      throw _privateConstructorUsedError;
+  @override
+  String get pendingId => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$$GetTrendingMoviesSuccessfulCopyWith<_$GetTrendingMoviesSuccessful>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$GetTrendingMoviesErrorCopyWith<$Res>
+    implements $GetTrendingMoviesCopyWith<$Res> {
+  factory _$$GetTrendingMoviesErrorCopyWith(_$GetTrendingMoviesError value,
+          $Res Function(_$GetTrendingMoviesError) then) =
+      __$$GetTrendingMoviesErrorCopyWithImpl<$Res>;
+  @override
+  $Res call({Object error, StackTrace strackTrace, String pendingId});
+}
+
+/// @nodoc
+class __$$GetTrendingMoviesErrorCopyWithImpl<$Res>
+    extends _$GetTrendingMoviesCopyWithImpl<$Res>
+    implements _$$GetTrendingMoviesErrorCopyWith<$Res> {
+  __$$GetTrendingMoviesErrorCopyWithImpl(_$GetTrendingMoviesError _value,
+      $Res Function(_$GetTrendingMoviesError) _then)
+      : super(_value, (v) => _then(v as _$GetTrendingMoviesError));
+
+  @override
+  _$GetTrendingMoviesError get _value =>
+      super._value as _$GetTrendingMoviesError;
+
+  @override
+  $Res call({
+    Object? error = freezed,
+    Object? strackTrace = freezed,
+    Object? pendingId = freezed,
+  }) {
+    return _then(_$GetTrendingMoviesError(
+      error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as Object,
+      strackTrace == freezed
+          ? _value.strackTrace
+          : strackTrace // ignore: cast_nullable_to_non_nullable
+              as StackTrace,
+      pendingId == freezed
+          ? _value.pendingId
+          : pendingId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GetTrendingMoviesError implements GetTrendingMoviesError {
+  const _$GetTrendingMoviesError(this.error, this.strackTrace,
+      [this.pendingId = _kGetMoviePendingId]);
+
+  @override
+  final Object error;
+  @override
+  final StackTrace strackTrace;
+  @override
+  @JsonKey()
+  final String pendingId;
+
+  @override
+  String toString() {
+    return 'GetTrendingMovies.error(error: $error, strackTrace: $strackTrace, pendingId: $pendingId)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GetTrendingMoviesError &&
+            const DeepCollectionEquality().equals(other.error, error) &&
+            const DeepCollectionEquality()
+                .equals(other.strackTrace, strackTrace) &&
+            const DeepCollectionEquality().equals(other.pendingId, pendingId));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(error),
+      const DeepCollectionEquality().hash(strackTrace),
+      const DeepCollectionEquality().hash(pendingId));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$GetTrendingMoviesErrorCopyWith<_$GetTrendingMoviesError> get copyWith =>
+      __$$GetTrendingMoviesErrorCopyWithImpl<_$GetTrendingMoviesError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(ActionResult? onResult, String pendingId) start,
+    required TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)
+        successful,
+    required TResult Function(
+            Object error, StackTrace strackTrace, String pendingId)
+        error,
+  }) {
+    return error(this.error, strackTrace, pendingId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+  }) {
+    return error?.call(this.error, strackTrace, pendingId);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(ActionResult? onResult, String pendingId)? start,
+    TResult Function(
+            List<TrendingMovieInfo> trendingmovieinfo, String pendingId)?
+        successful,
+    TResult Function(Object error, StackTrace strackTrace, String pendingId)?
+        error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this.error, strackTrace, pendingId);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GetTrendingMoviesStart value) start,
+    required TResult Function(GetTrendingMoviesSuccessful value) successful,
+    required TResult Function(GetTrendingMoviesError value) error,
+  }) {
+    return error(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+  }) {
+    return error?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GetTrendingMoviesStart value)? start,
+    TResult Function(GetTrendingMoviesSuccessful value)? successful,
+    TResult Function(GetTrendingMoviesError value)? error,
+    required TResult orElse(),
+  }) {
+    if (error != null) {
+      return error(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GetTrendingMoviesError
+    implements GetTrendingMovies, ActionDone, ErrorAction {
+  const factory GetTrendingMoviesError(
+      final Object error, final StackTrace strackTrace,
+      [final String pendingId]) = _$GetTrendingMoviesError;
+
+  Object get error => throw _privateConstructorUsedError;
+  StackTrace get strackTrace => throw _privateConstructorUsedError;
+  @override
+  String get pendingId => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$$GetTrendingMoviesErrorCopyWith<_$GetTrendingMoviesError> get copyWith =>
       throw _privateConstructorUsedError;
 }

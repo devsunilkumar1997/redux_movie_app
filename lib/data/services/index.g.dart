@@ -22,11 +22,12 @@ class _MovieClient implements MovieClient {
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
     final _result = await _dio.fetch<Map<String, dynamic>>(
-        _setStreamType<ResponseWrapper<Map<String, dynamic>>>(
-            Options(method: 'GET', headers: _headers, extra: _extra)
-                .compose(_dio.options, 'https://api.themoviedb.org/3/trending',
-                    queryParameters: queryParameters, data: _data)
-                .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+        _setStreamType<ResponseWrapper<Map<String, dynamic>>>(Options(
+                method: 'GET', headers: _headers, extra: _extra)
+            .compose(_dio.options,
+                'trending/movie/week?api_key=ab5dcf678ac19cc2ebd5160783fdcb61',
+                queryParameters: queryParameters, data: _data)
+            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
     final value = ResponseWrapper<Map<String, dynamic>>.fromJson(_result.data!);
     return value;
   }

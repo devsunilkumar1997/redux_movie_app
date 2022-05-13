@@ -1147,3 +1147,574 @@ abstract class BlContainer$ implements BlContainer {
   _$$BlContainer$CopyWith<_$BlContainer$> get copyWith =>
       throw _privateConstructorUsedError;
 }
+
+TrendingMovieInfo _$TrendingMovieInfoFromJson(Map<String, dynamic> json) {
+  return TrendingMovieInfo$.fromJson(json);
+}
+
+/// @nodoc
+mixin _$TrendingMovieInfo {
+  String? get title => throw _privateConstructorUsedError;
+  bool? get adult => throw _privateConstructorUsedError;
+  String? get backdroppath => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
+  String? get originalLanguage => throw _privateConstructorUsedError;
+  String? get originalTitle => throw _privateConstructorUsedError;
+  String? get posterPath => throw _privateConstructorUsedError;
+  bool? get video => throw _privateConstructorUsedError;
+  double? get voteAverage => throw _privateConstructorUsedError;
+  int? get voteCount => throw _privateConstructorUsedError;
+  String? get overview => throw _privateConstructorUsedError;
+  String? get releaseDate => throw _privateConstructorUsedError;
+  List<int>? get genreIds => throw _privateConstructorUsedError;
+  double? get popularity => throw _privateConstructorUsedError;
+  String? get mediaType => throw _privateConstructorUsedError;
+  String? get firstAirDate => throw _privateConstructorUsedError;
+  String? get originalName => throw _privateConstructorUsedError;
+  List<String>? get originCountry => throw _privateConstructorUsedError;
+  String? get name => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $TrendingMovieInfoCopyWith<TrendingMovieInfo> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $TrendingMovieInfoCopyWith<$Res> {
+  factory $TrendingMovieInfoCopyWith(
+          TrendingMovieInfo value, $Res Function(TrendingMovieInfo) then) =
+      _$TrendingMovieInfoCopyWithImpl<$Res>;
+  $Res call(
+      {String? title,
+      bool? adult,
+      String? backdroppath,
+      int? id,
+      String? originalLanguage,
+      String? originalTitle,
+      String? posterPath,
+      bool? video,
+      double? voteAverage,
+      int? voteCount,
+      String? overview,
+      String? releaseDate,
+      List<int>? genreIds,
+      double? popularity,
+      String? mediaType,
+      String? firstAirDate,
+      String? originalName,
+      List<String>? originCountry,
+      String? name});
+}
+
+/// @nodoc
+class _$TrendingMovieInfoCopyWithImpl<$Res>
+    implements $TrendingMovieInfoCopyWith<$Res> {
+  _$TrendingMovieInfoCopyWithImpl(this._value, this._then);
+
+  final TrendingMovieInfo _value;
+  // ignore: unused_field
+  final $Res Function(TrendingMovieInfo) _then;
+
+  @override
+  $Res call({
+    Object? title = freezed,
+    Object? adult = freezed,
+    Object? backdroppath = freezed,
+    Object? id = freezed,
+    Object? originalLanguage = freezed,
+    Object? originalTitle = freezed,
+    Object? posterPath = freezed,
+    Object? video = freezed,
+    Object? voteAverage = freezed,
+    Object? voteCount = freezed,
+    Object? overview = freezed,
+    Object? releaseDate = freezed,
+    Object? genreIds = freezed,
+    Object? popularity = freezed,
+    Object? mediaType = freezed,
+    Object? firstAirDate = freezed,
+    Object? originalName = freezed,
+    Object? originCountry = freezed,
+    Object? name = freezed,
+  }) {
+    return _then(_value.copyWith(
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      adult: adult == freezed
+          ? _value.adult
+          : adult // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      backdroppath: backdroppath == freezed
+          ? _value.backdroppath
+          : backdroppath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      originalLanguage: originalLanguage == freezed
+          ? _value.originalLanguage
+          : originalLanguage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      originalTitle: originalTitle == freezed
+          ? _value.originalTitle
+          : originalTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
+      posterPath: posterPath == freezed
+          ? _value.posterPath
+          : posterPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      video: video == freezed
+          ? _value.video
+          : video // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      voteAverage: voteAverage == freezed
+          ? _value.voteAverage
+          : voteAverage // ignore: cast_nullable_to_non_nullable
+              as double?,
+      voteCount: voteCount == freezed
+          ? _value.voteCount
+          : voteCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      overview: overview == freezed
+          ? _value.overview
+          : overview // ignore: cast_nullable_to_non_nullable
+              as String?,
+      releaseDate: releaseDate == freezed
+          ? _value.releaseDate
+          : releaseDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      genreIds: genreIds == freezed
+          ? _value.genreIds
+          : genreIds // ignore: cast_nullable_to_non_nullable
+              as List<int>?,
+      popularity: popularity == freezed
+          ? _value.popularity
+          : popularity // ignore: cast_nullable_to_non_nullable
+              as double?,
+      mediaType: mediaType == freezed
+          ? _value.mediaType
+          : mediaType // ignore: cast_nullable_to_non_nullable
+              as String?,
+      firstAirDate: firstAirDate == freezed
+          ? _value.firstAirDate
+          : firstAirDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      originalName: originalName == freezed
+          ? _value.originalName
+          : originalName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      originCountry: originCountry == freezed
+          ? _value.originCountry
+          : originCountry // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$$TrendingMovieInfo$CopyWith<$Res>
+    implements $TrendingMovieInfoCopyWith<$Res> {
+  factory _$$TrendingMovieInfo$CopyWith(_$TrendingMovieInfo$ value,
+          $Res Function(_$TrendingMovieInfo$) then) =
+      __$$TrendingMovieInfo$CopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {String? title,
+      bool? adult,
+      String? backdroppath,
+      int? id,
+      String? originalLanguage,
+      String? originalTitle,
+      String? posterPath,
+      bool? video,
+      double? voteAverage,
+      int? voteCount,
+      String? overview,
+      String? releaseDate,
+      List<int>? genreIds,
+      double? popularity,
+      String? mediaType,
+      String? firstAirDate,
+      String? originalName,
+      List<String>? originCountry,
+      String? name});
+}
+
+/// @nodoc
+class __$$TrendingMovieInfo$CopyWithImpl<$Res>
+    extends _$TrendingMovieInfoCopyWithImpl<$Res>
+    implements _$$TrendingMovieInfo$CopyWith<$Res> {
+  __$$TrendingMovieInfo$CopyWithImpl(
+      _$TrendingMovieInfo$ _value, $Res Function(_$TrendingMovieInfo$) _then)
+      : super(_value, (v) => _then(v as _$TrendingMovieInfo$));
+
+  @override
+  _$TrendingMovieInfo$ get _value => super._value as _$TrendingMovieInfo$;
+
+  @override
+  $Res call({
+    Object? title = freezed,
+    Object? adult = freezed,
+    Object? backdroppath = freezed,
+    Object? id = freezed,
+    Object? originalLanguage = freezed,
+    Object? originalTitle = freezed,
+    Object? posterPath = freezed,
+    Object? video = freezed,
+    Object? voteAverage = freezed,
+    Object? voteCount = freezed,
+    Object? overview = freezed,
+    Object? releaseDate = freezed,
+    Object? genreIds = freezed,
+    Object? popularity = freezed,
+    Object? mediaType = freezed,
+    Object? firstAirDate = freezed,
+    Object? originalName = freezed,
+    Object? originCountry = freezed,
+    Object? name = freezed,
+  }) {
+    return _then(_$TrendingMovieInfo$(
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      adult: adult == freezed
+          ? _value.adult
+          : adult // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      backdroppath: backdroppath == freezed
+          ? _value.backdroppath
+          : backdroppath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      originalLanguage: originalLanguage == freezed
+          ? _value.originalLanguage
+          : originalLanguage // ignore: cast_nullable_to_non_nullable
+              as String?,
+      originalTitle: originalTitle == freezed
+          ? _value.originalTitle
+          : originalTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
+      posterPath: posterPath == freezed
+          ? _value.posterPath
+          : posterPath // ignore: cast_nullable_to_non_nullable
+              as String?,
+      video: video == freezed
+          ? _value.video
+          : video // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      voteAverage: voteAverage == freezed
+          ? _value.voteAverage
+          : voteAverage // ignore: cast_nullable_to_non_nullable
+              as double?,
+      voteCount: voteCount == freezed
+          ? _value.voteCount
+          : voteCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      overview: overview == freezed
+          ? _value.overview
+          : overview // ignore: cast_nullable_to_non_nullable
+              as String?,
+      releaseDate: releaseDate == freezed
+          ? _value.releaseDate
+          : releaseDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      genreIds: genreIds == freezed
+          ? _value._genreIds
+          : genreIds // ignore: cast_nullable_to_non_nullable
+              as List<int>?,
+      popularity: popularity == freezed
+          ? _value.popularity
+          : popularity // ignore: cast_nullable_to_non_nullable
+              as double?,
+      mediaType: mediaType == freezed
+          ? _value.mediaType
+          : mediaType // ignore: cast_nullable_to_non_nullable
+              as String?,
+      firstAirDate: firstAirDate == freezed
+          ? _value.firstAirDate
+          : firstAirDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      originalName: originalName == freezed
+          ? _value.originalName
+          : originalName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      originCountry: originCountry == freezed
+          ? _value._originCountry
+          : originCountry // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$TrendingMovieInfo$
+    with DiagnosticableTreeMixin
+    implements TrendingMovieInfo$ {
+  const _$TrendingMovieInfo$(
+      {this.title,
+      this.adult,
+      this.backdroppath,
+      this.id,
+      this.originalLanguage,
+      this.originalTitle,
+      this.posterPath,
+      this.video,
+      this.voteAverage,
+      this.voteCount,
+      this.overview,
+      this.releaseDate,
+      final List<int>? genreIds,
+      this.popularity,
+      this.mediaType,
+      this.firstAirDate,
+      this.originalName,
+      final List<String>? originCountry,
+      this.name})
+      : _genreIds = genreIds,
+        _originCountry = originCountry;
+
+  factory _$TrendingMovieInfo$.fromJson(Map<String, dynamic> json) =>
+      _$$TrendingMovieInfo$FromJson(json);
+
+  @override
+  final String? title;
+  @override
+  final bool? adult;
+  @override
+  final String? backdroppath;
+  @override
+  final int? id;
+  @override
+  final String? originalLanguage;
+  @override
+  final String? originalTitle;
+  @override
+  final String? posterPath;
+  @override
+  final bool? video;
+  @override
+  final double? voteAverage;
+  @override
+  final int? voteCount;
+  @override
+  final String? overview;
+  @override
+  final String? releaseDate;
+  final List<int>? _genreIds;
+  @override
+  List<int>? get genreIds {
+    final value = _genreIds;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  @override
+  final double? popularity;
+  @override
+  final String? mediaType;
+  @override
+  final String? firstAirDate;
+  @override
+  final String? originalName;
+  final List<String>? _originCountry;
+  @override
+  List<String>? get originCountry {
+    final value = _originCountry;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
+
+  @override
+  final String? name;
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'TrendingMovieInfo(title: $title, adult: $adult, backdroppath: $backdroppath, id: $id, originalLanguage: $originalLanguage, originalTitle: $originalTitle, posterPath: $posterPath, video: $video, voteAverage: $voteAverage, voteCount: $voteCount, overview: $overview, releaseDate: $releaseDate, genreIds: $genreIds, popularity: $popularity, mediaType: $mediaType, firstAirDate: $firstAirDate, originalName: $originalName, originCountry: $originCountry, name: $name)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'TrendingMovieInfo'))
+      ..add(DiagnosticsProperty('title', title))
+      ..add(DiagnosticsProperty('adult', adult))
+      ..add(DiagnosticsProperty('backdroppath', backdroppath))
+      ..add(DiagnosticsProperty('id', id))
+      ..add(DiagnosticsProperty('originalLanguage', originalLanguage))
+      ..add(DiagnosticsProperty('originalTitle', originalTitle))
+      ..add(DiagnosticsProperty('posterPath', posterPath))
+      ..add(DiagnosticsProperty('video', video))
+      ..add(DiagnosticsProperty('voteAverage', voteAverage))
+      ..add(DiagnosticsProperty('voteCount', voteCount))
+      ..add(DiagnosticsProperty('overview', overview))
+      ..add(DiagnosticsProperty('releaseDate', releaseDate))
+      ..add(DiagnosticsProperty('genreIds', genreIds))
+      ..add(DiagnosticsProperty('popularity', popularity))
+      ..add(DiagnosticsProperty('mediaType', mediaType))
+      ..add(DiagnosticsProperty('firstAirDate', firstAirDate))
+      ..add(DiagnosticsProperty('originalName', originalName))
+      ..add(DiagnosticsProperty('originCountry', originCountry))
+      ..add(DiagnosticsProperty('name', name));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$TrendingMovieInfo$ &&
+            const DeepCollectionEquality().equals(other.title, title) &&
+            const DeepCollectionEquality().equals(other.adult, adult) &&
+            const DeepCollectionEquality()
+                .equals(other.backdroppath, backdroppath) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality()
+                .equals(other.originalLanguage, originalLanguage) &&
+            const DeepCollectionEquality()
+                .equals(other.originalTitle, originalTitle) &&
+            const DeepCollectionEquality()
+                .equals(other.posterPath, posterPath) &&
+            const DeepCollectionEquality().equals(other.video, video) &&
+            const DeepCollectionEquality()
+                .equals(other.voteAverage, voteAverage) &&
+            const DeepCollectionEquality().equals(other.voteCount, voteCount) &&
+            const DeepCollectionEquality().equals(other.overview, overview) &&
+            const DeepCollectionEquality()
+                .equals(other.releaseDate, releaseDate) &&
+            const DeepCollectionEquality().equals(other._genreIds, _genreIds) &&
+            const DeepCollectionEquality()
+                .equals(other.popularity, popularity) &&
+            const DeepCollectionEquality().equals(other.mediaType, mediaType) &&
+            const DeepCollectionEquality()
+                .equals(other.firstAirDate, firstAirDate) &&
+            const DeepCollectionEquality()
+                .equals(other.originalName, originalName) &&
+            const DeepCollectionEquality()
+                .equals(other._originCountry, _originCountry) &&
+            const DeepCollectionEquality().equals(other.name, name));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        const DeepCollectionEquality().hash(title),
+        const DeepCollectionEquality().hash(adult),
+        const DeepCollectionEquality().hash(backdroppath),
+        const DeepCollectionEquality().hash(id),
+        const DeepCollectionEquality().hash(originalLanguage),
+        const DeepCollectionEquality().hash(originalTitle),
+        const DeepCollectionEquality().hash(posterPath),
+        const DeepCollectionEquality().hash(video),
+        const DeepCollectionEquality().hash(voteAverage),
+        const DeepCollectionEquality().hash(voteCount),
+        const DeepCollectionEquality().hash(overview),
+        const DeepCollectionEquality().hash(releaseDate),
+        const DeepCollectionEquality().hash(_genreIds),
+        const DeepCollectionEquality().hash(popularity),
+        const DeepCollectionEquality().hash(mediaType),
+        const DeepCollectionEquality().hash(firstAirDate),
+        const DeepCollectionEquality().hash(originalName),
+        const DeepCollectionEquality().hash(_originCountry),
+        const DeepCollectionEquality().hash(name)
+      ]);
+
+  @JsonKey(ignore: true)
+  @override
+  _$$TrendingMovieInfo$CopyWith<_$TrendingMovieInfo$> get copyWith =>
+      __$$TrendingMovieInfo$CopyWithImpl<_$TrendingMovieInfo$>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$TrendingMovieInfo$ToJson(this);
+  }
+}
+
+abstract class TrendingMovieInfo$ implements TrendingMovieInfo {
+  const factory TrendingMovieInfo$(
+      {final String? title,
+      final bool? adult,
+      final String? backdroppath,
+      final int? id,
+      final String? originalLanguage,
+      final String? originalTitle,
+      final String? posterPath,
+      final bool? video,
+      final double? voteAverage,
+      final int? voteCount,
+      final String? overview,
+      final String? releaseDate,
+      final List<int>? genreIds,
+      final double? popularity,
+      final String? mediaType,
+      final String? firstAirDate,
+      final String? originalName,
+      final List<String>? originCountry,
+      final String? name}) = _$TrendingMovieInfo$;
+
+  factory TrendingMovieInfo$.fromJson(Map<String, dynamic> json) =
+      _$TrendingMovieInfo$.fromJson;
+
+  @override
+  String? get title => throw _privateConstructorUsedError;
+  @override
+  bool? get adult => throw _privateConstructorUsedError;
+  @override
+  String? get backdroppath => throw _privateConstructorUsedError;
+  @override
+  int? get id => throw _privateConstructorUsedError;
+  @override
+  String? get originalLanguage => throw _privateConstructorUsedError;
+  @override
+  String? get originalTitle => throw _privateConstructorUsedError;
+  @override
+  String? get posterPath => throw _privateConstructorUsedError;
+  @override
+  bool? get video => throw _privateConstructorUsedError;
+  @override
+  double? get voteAverage => throw _privateConstructorUsedError;
+  @override
+  int? get voteCount => throw _privateConstructorUsedError;
+  @override
+  String? get overview => throw _privateConstructorUsedError;
+  @override
+  String? get releaseDate => throw _privateConstructorUsedError;
+  @override
+  List<int>? get genreIds => throw _privateConstructorUsedError;
+  @override
+  double? get popularity => throw _privateConstructorUsedError;
+  @override
+  String? get mediaType => throw _privateConstructorUsedError;
+  @override
+  String? get firstAirDate => throw _privateConstructorUsedError;
+  @override
+  String? get originalName => throw _privateConstructorUsedError;
+  @override
+  List<String>? get originCountry => throw _privateConstructorUsedError;
+  @override
+  String? get name => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(ignore: true)
+  _$$TrendingMovieInfo$CopyWith<_$TrendingMovieInfo$> get copyWith =>
+      throw _privateConstructorUsedError;
+}
